@@ -16,8 +16,8 @@ Route::get('ex', function () {
 });
 
 Route::get('/', function () {
-    // $datas = DB::table('datas') ->get();
-    return view('datas');
+    // $data = DB::table('data') ->get();
+    return view('data');
 }) -> name('list');
 
 Route::get('add', function () {
@@ -29,7 +29,7 @@ Route::get('edit', function () {
 })->name('edition');
 
 // Route::get('/', function () {
-//     // $datas = DB::table('datas') ->get();
+//     // $data = DB::table('data') ->get();
 
-//     return view('datas', ['datas' => $data]);
+//     return view('data', ['data' => $data]);
 // }) -> name('list');

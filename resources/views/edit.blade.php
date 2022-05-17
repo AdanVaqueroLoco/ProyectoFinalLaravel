@@ -4,7 +4,7 @@
 
     <h2>EDITAR REGISTROS</h2>
 
-        <form method="POST"  action="{{ url('datas') }}">
+        <form method="POST"  action="{{ url('data') }}">
             @csrf
             @method('PUT')
             <div class="mb-3">
