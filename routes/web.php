@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +11,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('ex', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    // $datas = DB::table('datas') ->get();
+    return view('datas');
+}) -> name('list');
+
+Route::get('add', function () {
+    return view('add');
+})->name('adding');
+
+Route::get('edit', function () {
+    return view('edit');
+})->name('edition');
+
+// Route::get('/', function () {
+//     // $datas = DB::table('datas') ->get();
+
+//     return view('datas', ['datas' => $data]);
+// }) -> name('list');
